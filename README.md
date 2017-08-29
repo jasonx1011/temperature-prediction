@@ -23,3 +23,10 @@ Anaconda and Python 2.7
 **Packages:**  
 conda create -n weather_prediction_py27 python=2.7  
 conda install numpy pandas matplotlib scikit-learn  
+conda install spyder  
+
+**Run Steps**  
+% git clone https://github.com/jasonx1011/weather_prediction.git  
+% python weather_prediction.py  
+or
+using **spyder** to run weather_prediction.py (Recommended)  
