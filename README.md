@@ -1,4 +1,4 @@
-# weather_prediction
+# Weather (Temperture) Prediction  
 
 **Goal:**    
 Using public local weather station data (San Jose) from NOAA (National Oceanic and  
