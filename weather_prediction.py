@@ -749,4 +749,3 @@ for experiment in [3]:
             logfile.write("model_re[{}] = {}\n".format(i, model_re[i]))
             # logfile.write("{} \n".format(model_re[i]))
             # logfile.write("==================== \n")
-            
