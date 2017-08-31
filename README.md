@@ -33,7 +33,8 @@ using **spyder** to run weather_prediction.py (Recommended)
 
 **Sample Outputs**  
    * Command Line Outputs:  
-<img src="./sample_outputs/sample_out_partial.png" width="350" height="350">
+<img src="./sample_outputs/sample_out_partial.png" width="400" height="400">
+
    * Plotting Outputs:  
 ![sample_plot_1](./sample_outputs/sample_plot_1.png)  
 ![sample_plot_2](./sample_outputs/sample_plot_2.png)  
