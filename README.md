@@ -30,3 +30,10 @@ conda install spyder
 % python weather_prediction.py  
 or
 using **spyder** to run weather_prediction.py (Recommended)  
+
+**Sample Outputs**  
+Command Line Outputs:  
+![sample_out_partial.png](./sample_outputs/sample_out_partial.png)
+Plotting Outputs:  
+![sample_plot_1.png](./sample_outputs/sample_plot_1.png)
+![sample_plot_2.png](./sample_outputs/sample_plot_2.png)

@@ -370,8 +370,8 @@ def linear_regr(X_train, y_train, X_test, y_test, poly_degree, interaction_only,
                 model_result = evaluation(X_train, y_train, X_test, y_test, poly_degree, interaction_only, print_coef, plot, ask_user, 
                                 model_result, model_name, model_runtime, regr_lasso, alpha)
         elif (model == 2):
-            # for alpha in [0.0001, 0.001, 0.01, 0.1, 1, 3, 10]:
-            for alpha in [0.0000001, 0.00001, 0.001, 0.01, 0.1, 1, 3, 10, 30, 100, 300, 10**3, 10**4, 10**5]:
+            for alpha in [0.0001, 0.001, 0.01, 0.1, 1, 3, 10]:
+            # for alpha in [0.0000001, 0.00001, 0.001, 0.01, 0.1, 1, 3, 10, 30, 100, 300, 10**3, 10**4, 10**5]:
                 # test score: 0.84
                 model_name = "linear_model.Ridge"
                 regr_ridge = linear_model.Ridge(alpha = alpha)
@@ -435,6 +435,7 @@ def evaluation(X_train, y_train, X_test, y_test, poly_degree, interaction_only, 
         logfile.write("poly_degree = {}, interaction_only = {}\n".format(poly_degree, interaction_only))
     
     print("Model: {} \n".format( model_name ) )
+    print("Alpha (Regularization strength): {} \n".format( alpha ) )
     print("X_train.shape = {}".format(X_train.shape) )
     print("y_train.shape = {}".format(y_train.shape) )
     print("X_test.shape = {}".format(X_test.shape) )
@@ -487,6 +488,7 @@ def evaluation(X_train, y_train, X_test, y_test, poly_degree, interaction_only, 
         logfile.write("====================\n")
         logfile.write("Features polynomial degree: {} \n".format( poly_degree ) )
         logfile.write("Model: {} \n".format( model_name ) )
+        logfile.write("Alpha (Regularization strength): {} \n".format( alpha ) )
         logfile.write("X_train.shape = {} \n".format(X_train.shape) )
         logfile.write("y_train.shape = {} \n".format(y_train.shape) )
         logfile.write("X_test.shape = {} \n".format(X_test.shape) )
@@ -729,14 +731,14 @@ for experiment in [3]:
     # run_fit("_predict_", df_time_train, df_time_test, new_target, new_features, poly_d_max=1, inter_only=False, print_coef=True, plot=True, ask_user=False)
     # model_re = run_fit("_predict_", df_time_train, df_time_test, new_target, new_features, poly_d_max=3, inter_only=False, print_coef=False, plot=False, ask_user=False)
     # model_re = run_fit("_predict_", df_time_train, df_time_test, new_target, new_features, poly_d_max=2, inter_only=False, print_coef=False, plot=False, ask_user=False)
-    run_fit("_predict_", df_time_train, df_time_test, new_target, new_features, poly_d_max=2, inter_only=False, print_coef=False, plot=True, ask_user=False)
+    model_re = run_fit("_predict_", df_time_train, df_time_test, new_target, new_features, poly_d_max=2, inter_only=False, print_coef=False, plot=True, ask_user=False)
     # ask_user = True (asking user for ploting time range)
     # run_fit("_predict_", df_time_train, df_time_test, new_target, new_features, poly_d_max=2, inter_only=False, print_coef=True, plot=True, ask_user=True)
     # debug 
     # run_fit("_predict_", df_time_train, df_time_test, new_target, new_features, poly_d_max=1, inter_only=False, print_coef=True, plot=False, ask_user=False)
     
     print("### Experiment = {} \n".format( experiment ) )
-    print("model_re = {}".format(model_re))
+    # print("model_re = {}".format(model_re))
     
     rt_stop = timeit.default_timer()
     total_runtime = rt_stop - rt_start
