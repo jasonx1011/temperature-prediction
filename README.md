@@ -32,8 +32,14 @@ or
 using **spyder** to run weather_prediction.py (Recommended)  
 
 **Sample Outputs**  
-Command Line Outputs:  
-![sample_out_partial.png](./sample_outputs/sample_out_partial.png)
-Plotting Outputs:  
-![sample_plot_1.png](./sample_outputs/sample_plot_1.png)
-![sample_plot_2.png](./sample_outputs/sample_plot_2.png)
+   * Command Line Outputs:  
+![sample_out_partial](./sample_outputs/sample_out_partial.png)  
+   * Plotting Outputs:  
+![sample_plot_1](./sample_outputs/sample_plot_1.png)  
+![sample_plot_2](./sample_outputs/sample_plot_2.png)  
+<!---
+too big & :height=... not work
+![sample_out_partial](./sample_outputs/sample_out_partial.png){:height="36px" width="36px"}  
+![sample_plot_1](./sample_outputs/sample_plot_1.png)  
+![sample_plot_2](./sample_outputs/sample_plot_2.png)  
+--->
