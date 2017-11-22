@@ -1,5 +1,7 @@
 # Weather (Temperture) Prediction  
 
+[implemented by Scikit-learn]  
+
 **Goal:**    
 Using public local weather station data (San Jose) from NOAA (National Oceanic and  
 Atmospheric Administration) to predict temperature for the next 24 hours by using  
