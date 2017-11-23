@@ -1,4 +1,4 @@
-# Weather (Temperture) Prediction  
+# Temperture Prediction  
 
 [implemented by Scikit-learn]  
 
