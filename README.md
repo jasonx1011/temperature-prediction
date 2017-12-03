@@ -2,6 +2,9 @@
 
 [implemented by Scikit-learn]  
 
+**Summary**  
+Generated new images from MINST & CelebA dataset using batch normalization technique, D/G Loss = 0.5 - 1.8  
+  
 **Goal:**    
 Using public local weather station data (San Jose) from NOAA (National Oceanic and  
 Atmospheric Administration) to predict temperature for the next 24 hours by using  
