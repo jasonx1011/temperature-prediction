@@ -42,6 +42,7 @@ using `spyder` to run weather_prediction.py (Recommended)
    * Plotting Outputs:  
 ![sample_plot_1](./sample_outputs/sample_plot_1.png)  
 ![sample_plot_2](./sample_outputs/sample_plot_2.png)  
+![sample_plot_3](./sample_outputs/sample_plot_3.png)  
 <!---
 too big & :height=... not work
 ![sample_out_partial](./sample_outputs/sample_out_partial.png){:height="36px" width="36px"}  
